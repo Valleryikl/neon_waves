@@ -13,7 +13,10 @@
     .gallery_group_text {
         width: 40%;
         margin-left: 50px;
-        .gallery_subtitle {
+        .gallery_group_title {
+            animation: blink 3s infinite;
+        }
+        .gallery_group_subtitle {
             margin-top: 20px;
         }
         .simple_btn {

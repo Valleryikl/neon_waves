@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -96,20 +95,14 @@ exemple:
   width: 100%;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1); /* Обычный размер */
-  }
-  50% {
-    transform: scale(1.025); /* Увеличенный размер */
-  }
-}
 @keyframes blink {
   0%, 100% {
     text-shadow: 0 0 5px #ff66ff, 0 0 9px #ff66ff, 0 0 20px #ff66ff;
+    transform: scale(1.025);
   }
   50% {
     text-shadow: 0 0 1px #ff66ff, 0 0 4px #ff66ff, 0 0 10px #ff66ff;
+    transform: scale(1);
   }
 }
 .simple_btn {
@@ -146,8 +139,7 @@ header .header_text {
   height: 100%;
 }
 header .header_text .header_title {
-  text-shadow: 0 0 3px #ff66ff, 0 0 7px #ff66ff, 0 0 20px #ff66ff;
-  animation: pulse 3s infinite ease-in-out;
+  animation: blink 3s infinite ease-in-out;
 }
 header .header_text .header_subtitle {
   font-style: italic;
@@ -307,7 +299,10 @@ header .warning {
   width: 40%;
   margin-left: 50px;
 }
-.gallery .gallery_group_text .gallery_subtitle {
+.gallery .gallery_group_text .gallery_group_title {
+  animation: blink 3s infinite;
+}
+.gallery .gallery_group_text .gallery_group_subtitle {
   margin-top: 20px;
 }
 .gallery .gallery_group_text .simple_btn {
@@ -328,4 +323,21 @@ header .warning {
   position: absolute;
   top: -100px;
   left: 250px;
+}
+
+footer {
+  padding: 50px 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background-image: url(../../img/png/footer_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer h2 {
+  width: 900px;
+  text-align: center;
+  animation: blink 3s infinite;
 }/*# sourceMappingURL=main.css.map */

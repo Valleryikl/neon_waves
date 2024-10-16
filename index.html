@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Waves</title>
-    <link rel="stylesheet" href="scss/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Waves</title>
+  <link rel="stylesheet" href="scss/main.css">
 </head>
+
 <body>
-    <nav class="menu" id="myMenu">
+  <header>
+    <div class="container">
+      <nav class="menu" id="myMenu">
         <a class="logo" href="index.html">Neon Waves</a>
         <a class="menu_item" href="#contact">Contact</a>
         <a class="menu_item" href="#gallery">Gallery</a>
@@ -16,17 +20,26 @@
         <a onclick="myFunction()" class="icon" onclick="myFunction()">
           <i><img src="img/svg/menu.svg" alt="menu"></i>
         </a>
-    </nav>
-
-      <script>
-      function myFunction() {
-        let x = document.getElementById("myMenu");
-        if (x.className === "menu") {
-          x.className += " responsive";
-        } else {
-          x.className = "menu";
-        }
+      </nav>
+      <div class="header_text">
+        <h1 class="header_title">Where Waves Meet Neon Lights</h1>
+        <p class="header_subtitle">"Join an endless summer night of music, lights, and boundless fun.
+          Get ready to be welcomed with cocktails in hand and stunning swimsuits
+          all around."</p>
+      </div>
+      <h6 class="warning">*This event is 18+ only</h6>
+    </div>
+  </header>
+  <script>
+    function myFunction() {
+      let x = document.getElementById("myMenu");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "menu";
       }
-      </script>
+    }
+  </script>
 </body>
+
 </html>

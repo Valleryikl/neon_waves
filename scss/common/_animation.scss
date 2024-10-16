@@ -1,0 +1,8 @@
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Обычный размер */
+    }
+    50% {
+        transform: scale(1.025); /* Увеличенный размер */
+    }
+}

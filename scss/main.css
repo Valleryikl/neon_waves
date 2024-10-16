@@ -3,19 +3,20 @@
   overflow: hidden;
   margin: 0 75px;
 }
-.menu .menu_item {
+.menu .menu_item,
+.menu .logo {
   float: left;
   display: block;
   color: #000000;
+  padding: 15px 35px;
   text-align: center;
-  padding: 16px 35px;
-  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 .menu .menu_item:not(:first-child) {
   float: right;
 }
-.menu .menu_item:hover {
+.menu .menu_item:hover,
+.menu .logo:hover {
   transform: scale(1.05);
 }
 .menu .icon {
@@ -54,25 +55,29 @@ ul, ol {
 }
 
 @media (max-width: 1000px) {
-  .menu_item {
+  .menu .menu_item {
     font-size: 16px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 860px) {
   .menu .menu_item {
     padding: 15px 20px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .menu .menu_item:not(:first-child) {
     display: none;
   }
-  .menu .menu_item.icon {
+  .menu .menu_item {
+    padding: 15px 35px;
+  }
+  .menu .icon,
+  .menu .menu_item {
     float: right;
     display: block;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .menu.responsive {
     position: relative;
   }
@@ -81,16 +86,26 @@ ul, ol {
     right: 0;
     top: 0;
   }
-  .menu.responsive a {
+  .menu.responsive .menu_item,
+  .menu.responsive .logo {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    margin: 0 20px;
+  }
+  .menu .logo {
+    font-size: 20px;
   }
 }
 .logo {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 700;
+  line-height: 24px;
 }
 
 .menu_item {

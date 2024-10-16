@@ -30,6 +30,11 @@ ul, ol {
   list-style: none;
 }
 
+button {
+  background-color: none;
+  border: none;
+}
+
 .logo {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
@@ -46,6 +51,18 @@ ul, ol {
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 80px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
   font-weight: 400;
 }
 
@@ -75,7 +92,8 @@ exemple:
 }  
 */
 .container {
-  margin: 0 75px;
+  padding: 0 75px;
+  width: 100%;
 }
 
 @keyframes pulse {
@@ -86,6 +104,35 @@ exemple:
     transform: scale(1.025); /* Увеличенный размер */
   }
 }
+@keyframes blink {
+  0%, 100% {
+    text-shadow: 0 0 5px #ff66ff, 0 0 9px #ff66ff, 0 0 20px #ff66ff;
+  }
+  50% {
+    text-shadow: 0 0 1px #ff66ff, 0 0 4px #ff66ff, 0 0 10px #ff66ff;
+  }
+}
+.simple_btn {
+  padding: 5px 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: rgb(255, 0, 213);
+  transition: all 0.15s ease-in-out;
+}
+
+.simple_btn:hover {
+  background: rgb(255, 12, 190);
+  box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.6);
+  transform: scale(1.015);
+}
+
+.simple_btn:active {
+  background: rgb(226, 0, 165);
+}
+
 header {
   background-image: url(../../img/png/hero_back.png);
   background-repeat: no-repeat;
@@ -187,4 +234,65 @@ header .warning {
   .menu .logo {
     font-size: 20px;
   }
+}
+.about {
+  padding-top: 70px;
+  background-image: url(../../img/png/about_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.about .about_title {
+  animation: blink 3s infinite;
+}
+.about .about_group {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 70px 0;
+}
+.about .about_group .about_group_item {
+  width: 225px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.about .about_group .about_group_text {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.about .about_group .about_group_item:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+.about .about_group .about_group_item:hover .about_group_text {
+  opacity: 1;
+}
+.about .about_group .item_cocktail {
+  background-image: url(../../img/png/cocktail.png);
+}
+.about .about_group .item_pool {
+  background-image: url(../../img/png/pool.png);
+}
+.about .about_group .item_music {
+  background-image: url(../../img/png/music.png);
+}
+
+.gallery {
+  background-image: url(../../img/png/gallery_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */

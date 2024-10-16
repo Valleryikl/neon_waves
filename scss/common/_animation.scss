@@ -6,3 +6,17 @@
         transform: scale(1.025); /* Увеличенный размер */
     }
 }
+@keyframes blink {
+    0%, 100% {
+        text-shadow:
+        0 0 5px #ff66ff,
+        0 0 9px #ff66ff,
+        0 0 20px #ff66ff;
+    }
+    50% {
+        text-shadow:
+        0 0 1px #ff66ff,
+        0 0 4px #ff66ff,
+        0 0 10px #ff66ff;
+    }
+}

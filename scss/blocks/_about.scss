@@ -1,0 +1,63 @@
+.about {
+    padding-top: 70px;
+    background-image: url(../../img/png/about_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .about_title {
+        animation: blink 3s infinite;
+    }
+
+    .about_group {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 70px 0;
+
+        .about_group_item {
+            width: 225px;
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-blend-mode: color;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            transition: all .2s ease-in-out;
+        }
+
+        .about_group_text {
+            transition: all .3s ease-in-out;
+            opacity: 0;
+        }
+
+        .about_group_item:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 80%);
+        }
+
+        .about_group_item:hover .about_group_text {
+            opacity: 1;
+        }
+
+        .item_cocktail {
+            background-image: url(../../img/png/cocktail.png);
+        }
+
+        .item_pool {
+            background-image: url(../../img/png/pool.png);
+        }
+
+        .item_music {
+            background-image: url(../../img/png/music.png);
+        }
+    }
+}

@@ -1,31 +1,44 @@
-@media (max-width: 850px) {
-  .menu {
-    a {
-      padding: 15px 20px;
+@media (max-width: 1000px) {
+  .menu_item {
+    font-size: 16px;
   }
 }
+
+@media (max-width: 850px) {
+  .menu {
+    .menu_item {
+      padding: 15px 20px;
+    }
+  }
 }
 
 @media (max-width: 700px) {
-    .menu {
-      a:not(:first-child) {display: none;}
-      a.icon {
+  .menu {
+    .menu_item:not(:first-child) {
+      display: none;
+    }
+
+    .menu_item.icon {
       float: right;
       display: block;
     }
-    }
   }
-  
-  @media (max-width: 700px) {
-    .menu.responsive {position: relative;}
-    .menu.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+}
+
+@media (max-width: 700px) {
+  .menu.responsive {
+    position: relative;
   }
+
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

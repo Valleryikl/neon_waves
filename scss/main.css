@@ -422,6 +422,19 @@ footer h2 {
 }
 .neon_pool .neon_pool_group .neon_pool_border {
   border: 3px solid white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.neon_pool .neon_pool_group .item1 .neon_pool_item_title {
+  width: 150px;
+}
+.neon_pool .neon_pool_group .item3 .neon_pool_item_title {
+  width: 200px;
+}
+.neon_pool .neon_pool_group .item3 .neon_pool_item_subtitle {
+  width: 270px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Waves, Gallery</title>
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+
+<body>
+    <header class="g-about">
+        <div class="container">
+            <nav class="menu" id="myMenu">
+                <a class="logo" href="../index.html">Neon Waves</a>
+                <a class="menu_item" href="#contact">Contact</a>
+                <a class="menu_item" href="gallery.html">Gallery</a>
+                <a class="menu_item" href="about.html">About</a>
+                <a class="menu_item" href="../index.html">Home</a>
+                <a onclick="myFunction()" class="icon" onclick="myFunction()">
+                    <i><img src="img/svg/menu.svg" alt="menu"></i>
+                </a>
+            </nav>
+            <div class="header_text">
+                <h1 class="header_title">Photos taken last year at the same place.</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="g-gallery">
+            <div class="container">
+                <div class="gallery_group">
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery1.png" alt="">
+                    </div>
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery2.png" alt="">
+                    </div>
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery3.png" alt="">
+                    </div>
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery4.png" alt="">
+                    </div>
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery5.png" alt="">
+                    </div>
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery6.png" alt="">
+                    </div>
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery7.png" alt="">
+                    </div>
+                    <div class="gallery_img">
+                        <img src="../img/png/gallery8.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Did we catch your interest? So what are you waiting for? Click!</h2>
+        <button class="simple_btn">Info</button>
+    </footer>
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myMenu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

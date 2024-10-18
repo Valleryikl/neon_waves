@@ -437,4 +437,34 @@ footer h2 {
 }
 .neon_pool .neon_pool_group .item3 .neon_pool_item_subtitle {
   width: 270px;
+}
+
+.g-about {
+  background-image: url(../../img/png/g_about_back.png);
+}
+.g-about .header_title {
+  width: 900px;
+}
+
+.g-gallery {
+  background-image: url(../../img/png/g_gallery_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+.g-gallery .gallery_group {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.g-gallery .gallery_img {
+  overflow: hidden;
+  width: 260px;
+}
+.g-gallery img {
+  transition: all 0.5s ease-in-out;
+}
+.g-gallery .gallery_img:hover img {
+  transform: scale(1.3);
 }/*# sourceMappingURL=main.css.map */

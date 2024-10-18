@@ -1,0 +1,22 @@
+.g-gallery {
+    background-image: url(../../img/png/g_gallery_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    .gallery_group {
+        display: flex;
+        gap: 50px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .gallery_img {
+        overflow: hidden;
+        width: 260px;
+    }
+    img {
+        transition: all .5s ease-in-out;
+    }
+    .gallery_img:hover img {
+        transform: scale(1.3);
+    }
+}

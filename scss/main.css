@@ -139,7 +139,7 @@ header .header_text {
   height: 100%;
 }
 header .header_text .header_title {
-  animation: blink 3s infinite ease-in-out;
+  animation: blink 3s infinite;
 }
 header .header_text .header_subtitle {
   font-style: italic;
@@ -340,4 +340,88 @@ footer h2 {
   width: 900px;
   text-align: center;
   animation: blink 3s infinite;
+}
+
+.a-about {
+  background-image: url(../../img/png/a-about_back.png);
+}
+
+.bartender {
+  color: #fff;
+  padding: 100px 0;
+  background-image: url(../../img/png/bartender_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bartender .container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.bartender .bartender_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.bartender .bartender_text .bartender_title {
+  animation: blink 3s infinite;
+}
+
+.sound_lab {
+  color: #fff;
+  padding: 100px 0;
+  background-image: url(../../img/png/sound_lab_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sound_lab .container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.sound_lab .sound_lab_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.sound_lab .sound_lab_text .sound_lab_title {
+  animation: blink 3s infinite;
+}
+
+.neon_pool {
+  color: #fff;
+  padding: 100px 0;
+  background-image: url(../../img/png/neon_pool_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.neon_pool .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+.neon_pool .neon_pool_title {
+  animation: blink 3s infinite;
+}
+.neon_pool .neon_pool_group {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.neon_pool .neon_pool_group .neon_pool_item {
+  width: 310px;
+  height: 370px;
+  padding: 20px;
+  border-radius: 30px;
+  background: rgba(131, 0, 255, 0.45);
+}
+.neon_pool .neon_pool_group .neon_pool_border {
+  border: 3px solid white;
+  padding: 15px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/main.css">
+    <title>Neon Waves, About</title>
+</head>
+
+<body>
+    <header class="a-about">
+        <div class="container">
+            <nav class="menu" id="myMenu">
+                <a class="logo" href="../index.html">Neon Waves</a>
+                <a class="menu_item" href="#contact">Contact</a>
+                <a class="menu_item" href="#gallery">Gallery</a>
+                <a class="menu_item" href="about.html">About</a>
+                <a class="menu_item" href="../index.html">Home</a>
+                <a onclick="myFunction()" class="icon" onclick="myFunction()">
+                    <i><img src="img/svg/menu.svg" alt="menu"></i>
+                </a>
+            </nav>
+            <div class="header_text">
+                <h1 class="header_title">What awaits you? Read below!</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="bartender">
+            <div class="container">
+                <div class="bartender_text">
+                    <h2 class="bartender_title">Meet Our Bartenders</h2>
+                    <p class="bartender_subtitle">The bartender at the counter is already waiting,
+                        preparing his best cocktails just for you. His confident moves reveal a true mastery,
+                        as if each cocktail is a small work of art. <br><br>
+                        Under the neon lights, the drinks take on a special magic, blending unique flavors and
+                        aromas. He&rsquo;ll craft a cocktail that captures the evening's vibe and makes you feel like
+                        part of this place. Our bartenders know how to set the mood with just a single glass.</p>
+                </div>
+                <img src="../img/png/img_bartender.png" alt="">
+            </div>
+        </section>
+        <section class="sound_lab">
+            <div class="container">
+                <img src="../img/png/img_sound_lab.png" alt="">
+                <div class="sound_lab_text">
+                    <h2 class="sound_lab_title">Sound Lab</h2>
+                    <p class="sound_lab_subtitle">The open-air Music Lab comes to life by the pool. Our DJs
+                        create the perfect mixes for a summer night: fresh air, bass vibrations, and neon lights
+                        reflecting in the water turn each melody into an unforgettable sensation. Immerse yourself
+                        in the rhythms and soak up the vibe — here, music and summer become one. <br><br>
+                        They create sounds that feel like they were made for this place — summer rhythms,
+                        neon lights reflecting on the water, and an energy that builds with every track.
+                        Here, there are no rules, only music, freedom, and the night sky above. Just enjoy
+                        the moment and let these sounds become part of your story.</p>
+                </div>
+            </div>
+        </section>
+        <section class="neon_pool">
+            <div class="container">
+                <h2 class="neon_pool_title">Neon Pool Experience</h2>
+                <div class="neon_pool_group">
+                    <div class="neon_pool_item">
+                        <div class="neon_pool_border">
+                            <p class="neon_pool_item_title">Immersion in Neon</p>
+                            <p class="neon_pool_item_subtitle">Our pool reflects neon lights, creating a magical
+                                atmosphere.
+                                Ultraviolet lamps and mist transform the space into a mysterious neon land.</p>
+                        </div>
+                    </div>
+                    <div class="neon_pool_item">
+                        <p class="neon_pool_item_title">Play of Light and Color</p>
+                        <p class="neon_pool_item_subtitle">Dynamic projectors create a unique light show, projecting
+                            patterns onto the water and walls, enhancing the atmosphere with music and visual effects.
+                        </p>
+                    </div>
+                    <div class="neon_pool_item">
+                        <p class="neon_pool_item_title">Neon Accessories and Water Illusions</p>
+                        <p class="neon_pool_item_subtitle">Glowing floats create the illusion of dancing lights on the
+                            water,
+                            adding colorful glows at night, while neon inflatables invite guests to capture
+                            unforgettable photos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myMenu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

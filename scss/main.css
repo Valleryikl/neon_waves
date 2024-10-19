@@ -494,4 +494,22 @@ footer h2 {
 .lex .lex_title {
   margin-bottom: 30px;
   animation: blink 3s infinite;
+}
+
+.when {
+  background-image: url(../../img/png/when_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.when .when_slaider_img {
+  position: relative;
+}
+.when .when_slaider_text {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 500px;
+  height: 260px;
+  bottom: 3px;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

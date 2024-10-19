@@ -1,0 +1,19 @@
+.lex {
+    color: #fff;
+    background-image: url(../../img/png/lex_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .lex_text {
+        width: 55%;
+        text-align: center;
+    }
+    .lex_title {
+        margin-bottom: 30px;
+        animation: blink 3s infinite;
+    }
+}

@@ -14,3 +14,26 @@
         transform: scale(1);
     }
 }
+@keyframes vip {
+    0%, 100% {
+        border-color: yellow;
+    }
+    15% {
+        border-color: orange;
+    }
+    30% {
+        border-color: red;
+    }
+    45% {
+        border-color: violet;
+    }
+    60% {
+        border-color: blueviolet;
+    }
+    75% {
+        border-color: darkblue;
+    }
+    90% {
+        border-color: yellowgreen;
+    }
+}

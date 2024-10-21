@@ -447,7 +447,11 @@ footer h2 {
   height: 370px;
   padding: 20px;
   border-radius: 30px;
-  background: rgba(131, 0, 255, 0.45);
+  background: rgba(131, 0, 255, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+.neon_pool .neon_pool_group .neon_pool_item:hover {
+  background-color: rgba(90, 0, 175, 0.6);
 }
 .neon_pool .neon_pool_group .neon_pool_border {
   border: 3px solid white;
@@ -457,6 +461,9 @@ footer h2 {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+.neon_pool .neon_pool_group .neon_pool_item_title {
+  font-weight: bolder;
 }
 .neon_pool .neon_pool_group .item1 .neon_pool_item_title {
   width: 150px;
@@ -587,6 +594,7 @@ footer h2 {
 }
 
 .tikets {
+  padding: 50px;
   background-image: url(../../img/png/tikets_back.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -630,4 +638,41 @@ footer h2 {
 }
 .tikets .tikets_item_text {
   padding: 10px 0;
+}
+
+.form {
+  color: #fff;
+  padding: 100px;
+  background-image: url(../../img/png/form_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.form .title_form {
+  animation: blink 3s infinite;
+}
+.form form {
+  width: 600px;
+  height: 450px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  height: 30px;
+  border-radius: 20px;
+  padding: 0 20px;
+  margin-bottom: 7px;
+}
+.form .simple_btn {
+  margin-top: 30px;
+  width: 150px;
+  margin-left: 37%;
 }/*# sourceMappingURL=main.css.map */

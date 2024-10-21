@@ -1,0 +1,36 @@
+.form {
+    color: #fff;
+    padding: 100px;
+    background-image: url(../../img/png/form_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    .title_form {
+        animation: blink 3s infinite;
+    }
+    form {
+        width: 600px;
+        height: 450px;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.70);
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        height: 30px;
+        border-radius: 20px;
+        padding: 0 20px;
+        margin-bottom: 7px;
+    }
+    .simple_btn {
+        margin-top: 30px;
+        width: 150px;
+        margin-left: 37%;
+    }
+}
